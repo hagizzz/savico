@@ -3,6 +3,10 @@ import Image from "next/image";
 import logoService from "@/assets/logoService.png";
 import iconLogoService from "@/assets/iconLogoService.png";
 import chargeLine2 from "@/assets/chargeLine2.png";
+import imageCard1 from "@/assets/imageCard1.png";
+import bgIconCard1 from "@/assets/bgIconCard1.png";
+import bgBottom from "@/assets/bgBottom.png";
+
 export default function Services() {
   return (
     <div className="relative w-full h-[500px]">
@@ -37,24 +41,33 @@ export default function Services() {
           <Image src={chargeLine2} alt="" width={400} />
         </div>
       </div>
+
+      {/* <div className="w-[300px]">
+        <div className="relative flex flex-col">
+          <Image src={imageCard1} alt="Service" className="rounded-t-lg" />
+
+          <Image
+            src={bgBottom}
+            alt="Bottom Background"
+            width={320}
+            className="  "
+          />
+
+          <div className="absolute left-6 top-[130px] z-10">
+            <Image src={bgIconCard1} alt="Icon" width={70} height={70} />
+          </div>
+
+          <div className="absolute top-[170px] px-6 pb-6 w-full">
+            <div className="text-lg font-bold text-green-800 leading-snug">
+              Tối ưu hiệu quả đầu tư - thi công trạm sạc từ A đến Z
+            </div>
+            <div className="text-gray-600 mt-2 text-sm leading-relaxed">
+              Từ khảo sát, thiết kế kỹ thuật, đấu nối EVN, đến lắp đặt và bàn
+              giao vận hành.
+            </div>
+          </div>
+        </div>
+      </div> */}
     </div>
   );
 }
-
-// <section className="py-16 px-6 bg-gray-50 text-center">
-//   <h2 className="text-3xl font-bold mb-8">Dịch vụ nổi bật</h2>
-//   <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-//     <div className="p-6 bg-white shadow rounded-xl">
-//       <h3 className="text-xl font-semibold mb-3">01. Tư vấn & Thiết kế</h3>
-//       <p>Đội ngũ kỹ sư nhiều năm kinh nghiệm tư vấn giải pháp tối ưu.</p>
-//     </div>
-//     <div className="p-6 bg-white shadow rounded-xl">
-//       <h3 className="text-xl font-semibold mb-3">02. Lắp đặt & Thi công</h3>
-//       <p>Đảm bảo tiến độ, chất lượng và an toàn trong mọi dự án.</p>
-//     </div>
-//     <div className="p-6 bg-white shadow rounded-xl">
-//       <h3 className="text-xl font-semibold mb-3">03. Vận hành & Bảo trì</h3>
-//       <p>Dịch vụ hậu mãi trọn gói, đồng hành lâu dài cùng khách hàng.</p>
-//     </div>
-//   </div>
-// </section>
