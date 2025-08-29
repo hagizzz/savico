@@ -3,6 +3,8 @@ import bgHero from "@/assets/bgHero.png";
 import background from "@/assets/background.png";
 import logo from "@/assets/logo.png";
 import chargeIcon from "@/assets/charge-icon.png";
+import bgButtonHero from "@/assets/bgButtonHero.png";
+import iconButtonHero from "@/assets/iconButtonHero.png";
 
 export default function Hero() {
   return (
@@ -26,18 +28,17 @@ export default function Hero() {
 
         <div className="absolute inset-0 flex items-center left-[900px]">
           <div className="max-w-7xl mx-auto px-6 md:px-12 py-12 md:py-20 relative z-10">
-            <div className="flex items-center space-x-2 text-gray-700 text-lg md:text-xl">
+            <div className="flex items-center gap-2 text-gray-700 text-lg">
               <Image src={logo} alt="" height={20} />
               <span>Giải pháp trạm sạc xe điện</span>
             </div>
 
-            <h1 className="mt-6 text-3xl md:text-5xl font-extrabold text-green-900 leading-tight">
-              TOÀN DIỆN CHO <br /> ĐÔ THỊ THÔNG MINH
-            </h1>
+            <span className="mt-6 text-5xl font-extrabold text-green-900 leading-tight uppercase">
+              toàn diện cho đô thị thông minh
+            </span>
 
             <div className="max-w-3xl mt-6">
               <div className="flex items-start">
-                {/* Icon bên trái */}
                 <Image
                   src={chargeIcon}
                   alt=""
@@ -56,9 +57,14 @@ export default function Hero() {
               </div>
             </div>
 
-            <button className="mt-8 inline-flex items-center space-x-2 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium transition">
-              <span>LIÊN HỆ NGAY</span>
-            </button>
+            <div className="relative inline-block">
+              <Image src={bgButtonHero} alt="" width={200} />
+
+              <div className="absolute inset-0 items-center justify-evenly flex ">
+                <div className="text-2xl text-white">LIÊN HỆ NGAY</div>
+                <Image src={iconButtonHero} alt="" width={30} />
+              </div>
+            </div>
           </div>
         </div>
       </header>

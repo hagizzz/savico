@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <main className="w-full overflow-hidden">
       <Hero />
-      {/* <Services />
-      <Features />
+      <Services />
+      {/* <Features />
       <Projects />
       <Process />
       <Support />
