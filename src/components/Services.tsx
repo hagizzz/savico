@@ -3,9 +3,7 @@ import Image from "next/image";
 import logoService from "@/assets/logoService.png";
 import iconLogoService from "@/assets/iconLogoService.png";
 import chargeLine2 from "@/assets/chargeLine2.png";
-import imageCard1 from "@/assets/imageCard1.png";
-import bgIconCard1 from "@/assets/bgIconCard1.png";
-import bgBottom from "@/assets/bgBottom.png";
+import CardService from "./CardService";
 
 export default function Services() {
   return (
@@ -42,32 +40,7 @@ export default function Services() {
         </div>
       </div>
 
-      {/* <div className="w-[300px]">
-        <div className="relative flex flex-col">
-          <Image src={imageCard1} alt="Service" className="rounded-t-lg" />
-
-          <Image
-            src={bgBottom}
-            alt="Bottom Background"
-            width={320}
-            className="  "
-          />
-
-          <div className="absolute left-6 top-[130px] z-10">
-            <Image src={bgIconCard1} alt="Icon" width={70} height={70} />
-          </div>
-
-          <div className="absolute top-[170px] px-6 pb-6 w-full">
-            <div className="text-lg font-bold text-green-800 leading-snug">
-              Tối ưu hiệu quả đầu tư - thi công trạm sạc từ A đến Z
-            </div>
-            <div className="text-gray-600 mt-2 text-sm leading-relaxed">
-              Từ khảo sát, thiết kế kỹ thuật, đấu nối EVN, đến lắp đặt và bàn
-              giao vận hành.
-            </div>
-          </div>
-        </div>
-      </div> */}
+      {/* <CardService /> */}
     </div>
   );
 }

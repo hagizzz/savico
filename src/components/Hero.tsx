@@ -8,36 +8,28 @@ import iconButtonHero from "@/assets/iconButtonHero.png";
 
 export default function Hero() {
   return (
-    <div>
-      <header className="relative w-full overflow-hidden">
-        <Image
-          src={background}
-          alt="Background Extra"
-          className="object-cover w-full h-auto"
-          priority
-        />
+    <header className="relative w-full overflow-hidden">
+      {/* Background */}
+      <Image
+        src={background}
+        alt="Background Extra"
+        className="object-cover w-full h-auto"
+        priority
+      />
 
-        <div className="absolute inset-y-0 right-[-10px] top-10 flex items-center">
-          <Image
-            src={bgHero}
-            alt="Background Hero"
-            className="w-[850px] h-auto object-contain"
-            priority
-          />
-        </div>
-
-        <div className="absolute inset-0 flex items-center left-[900px]">
-          <div className="max-w-7xl mx-auto px-6 md:px-12 py-12 md:py-20 relative z-10">
-            <div className="flex items-center gap-2 text-gray-700 text-lg">
-              <Image src={logo} alt="" height={20} />
+      <div className="absolute right-0 top-60 flex items-center justify-end  md:w-1/2">
+        <div className="w-full h-[480px] rounded-l-[60px] bg-gradient-to-r from-[#F6FAE9]/90 to-[#F0F5D5]/90 flex flex-col justify-around pl-[10px]">
+          <div className="flex flex-col">
+            <div className="flex items-center gap-2 text-[#084a0a] text-sm sm:text-base md:text-lg ">
+              <Image src={logo} alt="Logo" height={20} />
               <span>Giải pháp trạm sạc xe điện</span>
             </div>
 
-            <span className="mt-6 text-5xl font-extrabold text-green-900 leading-tight uppercase">
+            <div className="mt-4 pl-2.5 sm:mt-6 text-2xl sm:text-3xl md:text-5xl font-extrabold text-green-900 leading-snug sm:leading-tight uppercase max-w-xl">
               toàn diện cho đô thị thông minh
-            </span>
+            </div>
 
-            <div className="max-w-3xl mt-6">
+            <div className="max-w-3xl mt-4 sm:mt-6">
               <div className="flex items-start">
                 <Image
                   src={chargeIcon}
@@ -46,8 +38,7 @@ export default function Hero() {
                   height={20}
                   className="mt-1 shrink-0"
                 />
-                {/* Nội dung đoạn văn */}
-                <p className="ml-3 text-base md:text-lg text-gray-700 leading-relaxed">
+                <p className="ml-3 text-sm sm:text-base md:text-lg text-gray-700 leading-relaxed">
                   Từ những trạm sạc đầu tiên đến mô hình hợp tác trên toàn quốc,
                   <span className="font-semibold"> SAVICO </span>
                   cam kết mang đến giải pháp hạ tầng sạc điện chuyên nghiệp, dễ
@@ -56,18 +47,25 @@ export default function Hero() {
                 </p>
               </div>
             </div>
+          </div>
 
-            <div className="relative inline-block">
-              <Image src={bgButtonHero} alt="" width={200} />
-
-              <div className="absolute inset-0 items-center justify-evenly flex ">
-                <div className="text-2xl text-white">LIÊN HỆ NGAY</div>
-                <Image src={iconButtonHero} alt="" width={30} />
-              </div>
+          <div className="flex mt-6 sm:mt-8 bg-[#1E5026] text-[#BFD42F]">
+            <div className="text-base sm:text-xl md:text-2xl ">
+              LIÊN HỆ NGAY
             </div>
+            <Image
+              src={iconButtonHero}
+              alt=""
+              width={25}
+              className="sm:w-[30px]"
+              style={{ color: "#BFD42F" }}
+            />
           </div>
         </div>
-      </header>
-    </div>
+      </div>
+
+      {/* Nội dung */}
+      <div className=" inset-0 flex items-center left-[900px]"></div>
+    </header>
   );
 }
